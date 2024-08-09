@@ -1,0 +1,44 @@
+@mixin card_content($color , $font-size:1rem , $font-weight:400){
+ color: $color;
+font-size: $font-size;
+font-weight: $font-weight;
+line-height: 1.6rem;
+}
+@mixin heading{
+    color: $white-primary;
+font-size: 4rem;
+font-weight: 700;
+line-height: 5rem;
+letter-spacing: 0px;
+}
+@mixin btn{
+    background: $pink-primary;
+    color: $white-primary;
+    border: none;
+    padding: 0.7rem 2rem;
+     &:hover{ 
+        background-color: $btn-hover;
+        transition: all 0.5s;
+    }
+
+}
+@mixin background{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+@mixin card-title{
+    color: $black-light;
+font-size: 1.75rem;
+font-weight: 700;
+line-height: 2.5rem;
+letter-spacing: 0%;
+margin: 1rem 0rem;
+}
+@mixin highlight{
+color: $black-bold;
+font-size: 3rem;
+font-weight: 700;
+line-height: 3.75rem;
+letter-spacing: 0px;
+}
